@@ -23,7 +23,7 @@ const privateKeyProvider = new EthereumPrivateKeyProvider({
 });
 
 export const web3AuthOptions: Web3AuthOptions = {
-  clientId: "BL3ZmlEMfQttySh_LpFPTOgMxzHVHsRt4oGa5jGzK8nc6D4RZgs5dbGqh_qpM7ylH14cRa7vY19jHB1Vlcawl-w",
+  clientId: "BPi5PB_UiIZ-cPz1GtV5i1I2iOSOHuimiXBI0e-Oe_u6X3oVAbCiAZOTEBtTXw4tsluTITPqA8zMsfxIKMjiqNQ",
   web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_DEVNET,
   uiConfig: {
     uxMode: "redirect",
