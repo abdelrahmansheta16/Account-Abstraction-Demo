@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/no-use-before-define */
-/* eslint-disable no-console */
-/* eslint-disable @typescript-eslint/no-shadow */
 
 "use client";
 
@@ -106,7 +103,7 @@ function App() {
     };
 
     init();
-  }, [web3Auth]);
+  }, [web3Auth, initModal]);
 
   const login = async () => {
     // IMP START - Login
