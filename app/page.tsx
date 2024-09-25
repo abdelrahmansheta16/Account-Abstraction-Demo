@@ -53,8 +53,6 @@ function App() {
     web3Auth
   } = useWeb3Auth();
 
-
-
   useEffect(() => {
     const init = async () => {
       try {
