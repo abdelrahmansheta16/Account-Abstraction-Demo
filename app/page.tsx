@@ -420,7 +420,7 @@ function App() {
     <>
       <div className="flex-container">
         <div>
-          <button onClick={moonPay.show} className="card">
+          <button onClick={() => moonPay?.show()} className="card">
             Pay
           </button>
         </div>
