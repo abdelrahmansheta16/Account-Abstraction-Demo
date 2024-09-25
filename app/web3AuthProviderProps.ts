@@ -24,7 +24,7 @@ const privateKeyProvider = new EthereumPrivateKeyProvider({
 
 export const web3AuthOptions: Web3AuthOptions = {
   clientId: "BPi5PB_UiIZ-cPz1GtV5i1I2iOSOHuimiXBI0e-Oe_u6X3oVAbCiAZOTEBtTXw4tsluTITPqA8zMsfxIKMjiqNQ",
-  web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_DEVNET,
+  web3AuthNetwork: WEB3AUTH_NETWORK.TESTNET,
   uiConfig: {
     uxMode: "redirect",
     appName: "W3A Heroes",
