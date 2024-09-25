@@ -21,6 +21,7 @@ import { EthereumPrivateKeyProvider } from "@web3auth/ethereum-provider";
 import { getDefaultExternalAdapters } from "@web3auth/default-evm-adapter";
 import { useWeb3Auth } from "@web3auth/modal-react-hooks";
 import { web3AuthOptions } from "./web3AuthProviderProps";
+import { loadMoonPay } from "@moonpay/moonpay-js";
 
 require('dotenv').config()
 
@@ -46,15 +47,32 @@ function App() {
   const [provider, setProvider] = useState<IProvider | null>(null);
   const [alchemyProvider, setAlchemyProvider] = useState<AlchemyProvider | null>(null);
   const [loggedIn, setLoggedIn] = useState(false);
+  const [moonPay, setMoonPay] = useState<any>();
   const {
     initModal,
     web3Auth
   } = useWeb3Auth();
 
+
+
   useEffect(() => {
     const init = async () => {
       try {
         console.log(web3Auth)
+        const moonPay: any = await loadMoonPay();
+        const moonPaySdk = moonPay({
+          flow: 'buy',
+          environment: 'sandbox',
+          variant: 'overlay',
+          params: {
+            apiKey: 'pk_test_ZJvaavYD4I3mgLjuCvZovqiyv7Iz9rs',
+            theme: 'dark',
+            baseCurrencyCode: 'usd',
+            baseCurrencyAmount: '100',
+            defaultCurrencyCode: 'eth'
+          }
+        });
+        setMoonPay(moonPaySdk)
         if (web3Auth) {
           console.log(web3Auth)
           // Adding default evm adapters
@@ -401,6 +419,11 @@ function App() {
   const loggedInView = (
     <>
       <div className="flex-container">
+        <div>
+          <button onClick={moonPay.show} className="card">
+            Pay
+          </button>
+        </div>
         <div>
           <button onClick={getUserInfo} className="card">
             Get User Info

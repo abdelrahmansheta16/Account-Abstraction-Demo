@@ -562,6 +562,11 @@
     semver "^7.5.4"
     uuid "^9.0.1"
 
+"@moonpay/moonpay-js@^0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@moonpay/moonpay-js/-/moonpay-js-0.6.1.tgz#d227c12f8f1211b04f193cce012e696d40679976"
+  integrity sha512-medkQ1jzEF8gD97WzqtVhGn30JC6QYc67dCGK8WgMY/NCw2CIlkBSM2LhBFTikOFk0cpGUMknl0EAlgaL9iOlw==
+
 "@next/env@13.4.9":
   version "13.4.9"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-13.4.9.tgz#b77759514dd56bfa9791770755a2482f4d6ca93e"

@@ -13,6 +13,7 @@
     "@alchemy/aa-accounts": "^2.4.0",
     "@alchemy/aa-alchemy": "^2.4.0",
     "@alchemy/aa-core": "^2.3.1",
+    "@moonpay/moonpay-js": "^0.6.1",
     "@typescript-eslint/eslint-plugin": "^7.17.0",
     "@walletconnect/sign-client": "^2.14.0",
     "@walletconnect/utils": "^2.14.0",
