@@ -55,6 +55,19 @@ const openloginAdapter = new OpenloginAdapter({
       defaultLanguage: "en", // en, de, ja, ko, zh, es, fr, pt, nl, tr
       mode: "dark", // whether to enable dark, light or auto mode. defaultValue: auto [ system theme]
     },
+    loginConfig: {
+      google: {
+        name: "Google",
+        verifier: "google-test-050",
+        typeOfLogin: "google",
+        clientId: "1068078266597-2u9krrrckur26ghf0afa79ph7csh20f6.apps.googleusercontent.com",
+      },
+      emailpasswordless: {
+        name: "Email Passwordless",
+        verifier: "Email-t2est",
+        typeOfLogin: "email_password",
+      },
+    },
     mfaSettings: {
       deviceShareFactor: {
         enable: true,
